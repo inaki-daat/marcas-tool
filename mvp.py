@@ -494,7 +494,7 @@ def search_marks(name, clase):
     if expediente_column_index is None:
         raise Exception("Expediente column not found")
 
-    for index, row in enumerate(rows[:5]):
+    for index, row in enumerate(rows[:20]):
         print(index)
         cols = row.find_elements(By.TAG_NAME, "td")
         row_data = {}  # Exclude the image column initially
